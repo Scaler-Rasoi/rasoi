@@ -106,10 +106,12 @@ input {
     font-weight: bold;
     transform: translate(3px, -3px);
     box-shadow: -3px 3px 0 rgba(0,0,0,0.1);
+    transition: 400ms;
 }
 .login-button:hover {
     color: white;
     background-color: darkcyan;
+    scale: 1.1;
 }
 
 .additional-options {
@@ -124,6 +126,7 @@ input {
 }
 
 .additional-options a:hover {
-    color:coral
+    color:coral;
 }
+
 
