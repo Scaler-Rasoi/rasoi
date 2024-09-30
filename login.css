@@ -123,6 +123,6 @@ input {
     font-size: 0.9em;
 }
 
-div.additional-options > a:hover {
+.additional-options a:hover {
     color: blue;
 }
