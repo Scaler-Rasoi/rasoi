@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .menu, .cart {
+            background-color: #ff9999;
+            border-radius: 15px;
+            padding: 20px;
+            width: 45%;
+        }
+        .menu-items, .cart-items {
+            background-color: #99ffcc;
+            border-radius: 10px;
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .cart-items {
+            background-color: #ffcc66;
+        }
+        .item {
+            background-color: #ff6666;
+            color: white;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item button {
+            background-color: #66cc66;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .quantity {
+            display: flex;
+            align-items: center;
+        }
+        .quantity span {
+            margin: 0 10px;
+            background-color: #3366cc;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+            margin-top: 0;
+        }
+        .total {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .total button {
+            background-color: #3366cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        /* Customizing scrollbar */
+        .menu-items::-webkit-scrollbar, .cart-items::-webkit-scrollbar {
+            width: 10px;
+        }
+        .menu-items::-webkit-scrollbar-track, .cart-items::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .menu-items::-webkit-scrollbar-thumb, .cart-items::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        .menu-items::-webkit-scrollbar-thumb:hover, .cart-items::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h2>MENU</h2>
+            <div class="menu-items">
+                <div class="item">ITEM 1 <button>+</button></div>
+                <div class="item">ITEM 2 <button>+</button></div>
+                <div class="item">ITEM 3 <button>+</button></div>
+                <div class="item">ITEM 4 <button>+</button></div>
+                <div class="item">ITEM 5 <button>+</button></div>
+                <div class="item">ITEM 6 <button>+</button></div>
+                <div class="item">ITEM 7 <button>+</button></div>
+                <div class="item">ITEM 8 <button>+</button></div>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>YOUR CART</h2>
+            <div class="cart-items">
+                <div class="item">
+                    ITEM 1
+                    <div class="quantity">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="item">
+                    ITEM 2
+                    <div class="quantity">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="item">
+                    ITEM 3
+                    <div class="quantity">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <button>BUY</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
