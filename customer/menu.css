@@ -168,3 +168,9 @@ h2 {
         font-size: 0.7rem;
     }
 }
+
+@media(max-width:385px) {
+    .container {
+        width: 250px;
+    }
+}
