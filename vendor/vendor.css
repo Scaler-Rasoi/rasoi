@@ -47,13 +47,7 @@ body {
     border-radius: 13px;
 }
 .scrollable-vertical {
-    max-height: 300px;
     overflow-y: auto;
-}
-.scrollable-horizontal {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 10px;
 }
 .item {
     background-color: #ffe4b5;
