@@ -1,0 +1,114 @@
+html {
+    background-image: url('../images/bg.jpg');
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffefd5;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffa500;
+    padding: 10px;
+}
+.navbar button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.navbar button.active {
+    background-color: #ff4500;
+}
+.page {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.page.active {
+    display: block;
+}
+.save {
+    display: flex;
+    justify-content: center;
+}
+.save-btn {
+    color: #ddd;
+    background-color: #ff4500;
+    height: 60px;
+    width: 100px;
+    border-radius: 13px;
+}
+.scrollable-vertical {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.scrollable-horizontal {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+.item {
+    background-color: #ffe4b5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item button {
+    background-color: #32cd32;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.item button.remove {
+    background-color: #ff4500;
+}
+.category {
+    font-weight: bold;
+    color: #ff6347;
+    margin-top: 20px;
+}
+.order {
+    background-color: #ffe4b5;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+.order button {
+    background-color: #32cd32;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+#totalSales {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+}
