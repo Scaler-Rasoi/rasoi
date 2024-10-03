@@ -17,12 +17,13 @@ body{
     height: 90%;
     background-image:url('../images/bg2.jpg');
     border-radius: 20px;
+    display: flex;
     align-items: center;
 }
 .container {
     display: flex;
     justify-content: space-around;
-    max-width: 60%;
+    width: 60%;
     margin: 0 auto;
 }
 .menu, .cart {
