@@ -187,3 +187,81 @@ h2 {
         width: 250px;
     }
 }
+
+@media(max-height:850px) {
+    .container {
+        padding-top: 50px;
+    }
+}
+
+@media(max-height:780px) {
+    .container {
+        padding-top: 80px;
+    }
+}
+
+@media(max-height:750px) {
+    .container {
+        padding-top: 100px;
+    }
+}
+
+@media(max-height:720px) {
+    .container {
+        padding-top: 130px;
+    }
+}
+
+@media(max-height:690px) {
+    .container {
+        padding-top: 170px;
+    }
+}
+
+@media(max-height:640px) {
+    .container {
+        padding-top: 200px;
+    }
+}
+
+@media(max-height:610px) {
+    .container {
+        padding-top: 250px;
+    }
+}
+
+@media(max-height:550px) {
+    .container {
+        padding-top: 300px;
+    }
+}
+
+@media(max-height:500px) {
+    .container {
+        padding-top: 350px;
+    }
+}
+
+@media(max-height:450px) {
+    .container {
+        padding-top: 400px;
+    }
+}
+
+@media(max-height:400px) {
+    .container {
+        padding-top: 450px;
+    }
+}
+
+@media(max-height:350px) {
+    .container {
+        padding-top: 500px;
+    }
+}
+
+@media(max-height:300px) {
+    .container {
+        padding-top: 550px;
+    }
+}
