@@ -17,12 +17,12 @@ body{
     flex-direction: column;
 }
 
-.logo {
+/* .logo {
     width: 150px;
     padding: 10px;
     justify-self: start;
     align-self: start;
-}
+} */
 
 .transparentImg{
     width: 94%;
