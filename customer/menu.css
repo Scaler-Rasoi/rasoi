@@ -27,7 +27,6 @@ body{
 .transparentImg{
     width: 94%;
     height: 90%;
-    background-image:url('../images/bg2.jpg');
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -40,22 +39,20 @@ body{
     margin: 0 auto;
 }
 .menu, .cart {
-    background-color: #ff9999;
+    background-color: #fc6;
     border-radius: 15px;
     padding: 20px;
     width: 45%;
     margin: 20px;
 }
 .menu-items, .cart-items {
-    background-color: #ffcc66;
+    background-color: #fff;
     border-radius: 10px;
     padding: 10px;
     height: 300px;
     overflow-y: auto;
 }
-.cart-items {
-    background-color: #ffcc66;
-}
+
 .item {
     background-color: #ff6666;
     color: white;
@@ -89,6 +86,7 @@ h2 {
     color: white;
     text-align: center;
     margin-top: 0;
+    font-weight: bold;
 }
 .total {
     text-align: center;
@@ -105,7 +103,7 @@ h2 {
     font-size: 16px;
 }
 .total > h3{
-    background-color: #ecc148;
+    background-color: #df862061;
     border-radius: 7px;
     width: 8rem;
     padding: 4px;

@@ -55,10 +55,19 @@ body {
 
 .save-btn {
     color: #ddd;
-    background-color: #ff4500;
+    background-color: rgb(0,140,255);
     height: 60px;
     width: 100px;
     border-radius: 13px;
+}
+
+.save-btn:hover {
+    background-color: rgb(0,100,200);
+    color: white;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .scrollable-vertical {
