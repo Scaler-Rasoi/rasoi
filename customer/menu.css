@@ -92,7 +92,7 @@ h2 {
 }
 .total {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .total button {
     background-color: #3366cc;
@@ -103,6 +103,17 @@ h2 {
     cursor: pointer;
     font-size: 16px;
 }
+.total > h3{
+    background-color: #ecc148;
+    border-radius: 7px;
+    width: 8rem;
+    padding: 4px;
+    color: white;
+    margin: auto;
+    margin-top: 4px;
+    justify-self: center;
+}
+
 /* Customizing scrollbar */
 .menu-items::-webkit-scrollbar, .cart-items::-webkit-scrollbar {
     width: 10px;
