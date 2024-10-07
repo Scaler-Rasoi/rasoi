@@ -137,6 +137,15 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
+@media (max-width: 300px) {
+    body{
+        width: 300px;
+    }
+    .page{
+        width: 230px;
+    }
+}
+
 #totalSales {
     font-weight: bold;
     margin-top: 20px;
