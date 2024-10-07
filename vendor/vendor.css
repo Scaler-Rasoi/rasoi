@@ -150,6 +150,7 @@ th, td {
     .page{
         width: 230px;
     }
+}
 @media (max-width: 565px) {
     .order {
         overflow-y: hidden;
