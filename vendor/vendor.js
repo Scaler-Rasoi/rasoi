@@ -26,34 +26,3 @@ const navButtons = document.querySelectorAll('.navbar button');
                 }
             });
         });
-
-        // function adjustDivHeights(className) {
-        //     // Select all elements with the given class
-        //     const elements = document.querySelectorAll(`.${className}`);
-            
-        //     if (elements.length === 0) return; // Exit if no elements found
-            
-        //     // Find the maximum height
-        //     const maxHeight = Math.max(...Array.from(elements).map(element => element.getBoundingClientRect().height));
-            
-        //     // Set all elements to the maximum height
-        //     elements.forEach(element => {
-        //         element.style.height = `${maxHeight}px`;
-        //     });
-        // }
-        
-        // // Usage
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     adjustDivHeights('order');
-        // });
-        
-        // // If content might change after initial load, you can also call it on window resize
-        // window.addEventListener('resize', function() {
-        //     adjustDivHeights('order');
-        // });
-        
-        // // Call adjustDivHeights more frequently if content changes dynamically
-        // // For example, if you're using a library like jQuery, you can use the following code:
-        // // $(document).on('DOMSubtreeModified', '.order', function() {
-        // //     adjustDivHeights('order');
-        // // });

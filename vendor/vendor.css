@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffefd5;
+    overflow-x: auto;
 }
 .navbar {
     display: flex;
@@ -105,4 +106,13 @@ th, td {
     font-weight: bold;
     margin-top: 20px;
     text-align: right;
+}
+
+@media(max-width: 300px) {
+    body{
+        width: 300px;
+    }
+    .page{
+        width: 230px;
+    }
 }
