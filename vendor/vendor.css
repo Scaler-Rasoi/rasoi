@@ -143,14 +143,6 @@ th, td {
     text-align: right;
 }
 
-@media(max-width: 300px) {
-    body{
-        width: 300px;
-    }
-    .page{
-        width: 230px;
-    }
-}
 @media (max-width: 565px) {
     .order {
         overflow-y: hidden;
@@ -162,6 +154,10 @@ th, td {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .item {
+        width: 95%;
     }
 }
 
