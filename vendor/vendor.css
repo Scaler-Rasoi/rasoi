@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffefd5;
+    overflow-x: auto;
 }
 
 #menu-icon {
@@ -142,6 +143,14 @@ th, td {
     text-align: right;
 }
 
+@media(max-width: 300px) {
+    body{
+        width: 300px;
+    }
+    .page{
+        width: 230px;
+    }
+}
 @media (max-width: 565px) {
     .order {
         overflow-y: hidden;
