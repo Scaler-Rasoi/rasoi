@@ -1,18 +1,27 @@
 html {
     background-image: url('../images/bg.jpg');
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffefd5;
+    overflow-x: auto;
 }
+
+#menu-icon {
+    font-size: 2.5rem;
+    display: none;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     background-color: #ffa500;
     padding: 10px;
 }
+
 .navbar button {
     background-color: #ff6347;
     border: none;
@@ -21,9 +30,11 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .navbar button.active {
     background-color: #ff4500;
 }
+
 .page {
     display: none;
     padding: 20px;
@@ -32,29 +43,37 @@ body {
     margin: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 .page.active {
     display: block;
 }
+
 .save {
     display: flex;
     justify-content: center;
 }
+
 .save-btn {
     color: #ddd;
-    background-color: #ff4500;
+    background-color: rgb(0,140,255);
     height: 60px;
     width: 100px;
     border-radius: 13px;
 }
+
+.save-btn:hover {
+    background-color: rgb(0,100,200);
+    color: white;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
 .scrollable-vertical {
-    max-height: 300px;
     overflow-y: auto;
 }
-.scrollable-horizontal {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 10px;
-}
+
 .item {
     background-color: #ffe4b5;
     margin: 10px 0;
@@ -64,6 +83,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .item button {
     background-color: #32cd32;
     border: none;
@@ -72,14 +92,27 @@ body {
     cursor: pointer;
     border-radius: 3px;
 }
+
 .item button.remove {
     background-color: #ff4500;
 }
+
 .category {
     font-weight: bold;
     color: #ff6347;
     margin-top: 20px;
 }
+
+.pending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pending > h2 {
+    align-self: center;
+}
+
 .order {
     background-color: #ffe4b5;
     margin: 10px;
@@ -88,7 +121,10 @@ body {
     display: inline-block;
     vertical-align: top;
     width: 200px;
+    height: 120px;
+    overflow-y: scroll;
 }
+
 .order button {
     background-color: #32cd32;
     border: none;
@@ -98,17 +134,75 @@ body {
     border-radius: 3px;
     margin-top: 10px;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
 th, td {
     text-align: left;
     padding: 8px;
     border-bottom: 1px solid #ddd;
 }
+
+@media (max-width: 300px) {
+    body{
+        width: 300px;
+    }
+    .page{
+        width: 230px;
+    }
+}
+
 #totalSales {
     font-weight: bold;
     margin-top: 20px;
     text-align: right;
+}
+
+@media (max-width: 565px) {
+    .order {
+        overflow-y: hidden;
+        height: auto
+    }
+    
+    .scrollable-vertical {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item {
+        width: 95%;
+    }
+}
+
+@media (max-width: 340px) {
+    #menu-icon {
+        display: block;
+        background: #ffa500;
+        width: 100%;
+    }
+
+    .navbar {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: #ffa500;
+        border-top: 0.1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+        background: rgba(255, 165, 0,0.8);
+    }
+
+    .navbar button{
+        display: block;
+        margin: 10px;
+    }
 }

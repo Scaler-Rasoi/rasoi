@@ -19,16 +19,18 @@
                         <h1>Scaler Rasoi</h1>
                         <div class="login-form" if="login-form">
                             <div class="input-container">
-                                <input type="text" placeholder="USER ID" required>
+                                <input type="tel" placeholder="Phone Number" required>
                             </div>
                             <div class="input-container">
                                 <input type="password" placeholder="Password" required>
                             </div>
-                            <button class="login-button" onclick="navigateToPage('customer/menu.html')">Login</button>
+                            <div class="buttons">
+                                <button class="login-button" onclick="navigateToPage('customer/menu.html')">Sign up</button>
+                                <button class="sign-up-button" onclick="navigateToPage('vendor/vendor.html')">Login</button>
+                            </div>
                         </div>
                         <div class="additional-options">
                             <a href="#">Forgot password</a>
-                            <a href="#">Sign Up</a>
                         </div>
                     </div>
                 </div>

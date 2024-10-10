@@ -96,7 +96,7 @@ input {
     background: transparent;
 }
 
-.login-button {
+.login-button, .sign-up-button {
     background-color: #ffd700;
     color: #000;
     border: 2px solid black;
@@ -108,10 +108,15 @@ input {
     box-shadow: -3px 3px 0 rgba(0,0,0,0.1);
     transition: 400ms;
 }
-.login-button:hover {
+.login-button:hover, .sign-up-button:hover {
     color: white;
     background-color: darkcyan;
     scale: 1.1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
 }
 
 .additional-options {

@@ -1,4 +1,4 @@
-# SCALER SCHOOL OF TECHNOLOGY CANTEEN WEBSITE
+#  CANTEEN WEBSITE
 
 This website serves the canteen of Scaler School of Technology, providing a login page with role-based access for both students and vendors. As with increasing no. students in our college canteen, it is difficult to manage the orders manually. This website will help the canteen manager to manage the orders more efficiently.
 
