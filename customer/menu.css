@@ -36,7 +36,11 @@ body{
     display: flex;
     justify-content: space-between;
     width: 60%;
+    background-image: url('../images/bg2.jpg');
     margin: 0 auto;
+    padding: 60px  100px 60px 100px;
+    overflow-y: auto;
+    border-radius: 30px;
 }
 .menu, .cart {
     background-color: #fc6;
@@ -51,6 +55,24 @@ body{
     padding: 10px;
     height: 300px;
     overflow-y: auto;
+}
+#category-selector {
+    width: 100%;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.menu-items .item {
+    display: none; /* Hide all items by default */
+}
+
+.menu-items .item.show {
+    display: flex; /* Show items when they have the 'show' class */
 }
 
 .item {
@@ -145,7 +167,7 @@ h2 {
 
     .menu {
         width: 65%;
-        height: 300px;
+        height: 350px;
     }
 
     .cart {
