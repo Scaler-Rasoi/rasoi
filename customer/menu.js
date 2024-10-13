@@ -24,3 +24,27 @@ const incrementButtons = document.querySelectorAll(".increment");
                 }
             });
         });
+
+
+// open items by their category
+document.addEventListener('DOMContentLoaded', function() {
+    const categorySelector = document.getElementById('category-selector');
+    const menuItems = document.querySelectorAll('.menu-items .item');
+
+    function filterItems(category) {
+        menuItems.forEach(item => {
+            if (category === 'all' || item.dataset.category === category) {
+                item.classList.add('show');
+            } else {
+                item.classList.remove('show');
+            }
+        });
+    }
+
+    categorySelector.addEventListener('change', function() {
+        filterItems(this.value);
+    });
+
+    // Initially show all items
+    filterItems('all');
+});

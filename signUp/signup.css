@@ -23,8 +23,8 @@ html{
 
 .outer-container {
     position: relative;
-    width: 340px;
-    height: 340px;
+    width: 380px;
+    height: 380px;
     padding: 10px;
     opacity: 1;
 }

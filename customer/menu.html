@@ -13,15 +13,21 @@
         <div class="menu">
             <h2>MENU</h2>
             <div class="menu-items">
-                <div class="item">ITEM 1 <button>+</button></div>
-                <div class="item">ITEM 2 <button>+</button></div>
-                <div class="item">ITEM 3 <button>+</button></div>
-                <div class="item">ITEM 4 <button>+</button></div>
-                <div class="item">ITEM 5 <button>+</button></div>
-                <div class="item">ITEM 6 <button>+</button></div>
-                <div class="item">ITEM 7 <button>+</button></div>
-                <div class="item">ITEM 8 <button>+</button></div>
+                <div class="item" data-category="appetizers">Nachos <button>+</button></div>
+                <div class="item" data-category="appetizers">Chicken Wings <button>+</button></div>
+                <div class="item" data-category="main-course">Burger <button>+</button></div>
+                <div class="item" data-category="main-course">Pizza <button>+</button></div>
+                <div class="item" data-category="main-course">Pasta <button>+</button></div>
+                <div class="item" data-category="desserts">Ice Cream <button>+</button></div>
+                <div class="item" data-category="desserts">Cheesecake <button>+</button></div>
+                <div class="item" data-category="desserts">Brownie <button>+</button></div>
             </div>
+            <select id="category-selector">
+                <option value="all">All Items</option>
+                <option value="appetizers">Appetizers</option>
+                <option value="main-course">Main Course</option>
+                <option value="desserts">Desserts</option>
+            </select>
         </div>
         <div class="cart">
             <h2>YOUR CART</h2>
