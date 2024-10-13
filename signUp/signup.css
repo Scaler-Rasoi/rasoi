@@ -21,7 +21,7 @@ body{
     box-shadow: 0 0 40px rgba(230, 77, 17, 0.6);
     padding: 20px;
     width: 400px;
-    height: 40vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
