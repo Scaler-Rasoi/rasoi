@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranshu Foodie Heaven - Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="script.js" type="module"></script>
 </head>
 <body>
     
@@ -17,16 +18,16 @@
                 <div class="tilted-box">
                     <div class="tilted-box-2">
                         <h1>Scaler Rasoi</h1>
-                        <div class="login-form" if="login-form">
+                        <div class="login-form" id="login-form">
                             <div class="input-container">
-                                <input type="tel" placeholder="Phone Number" required>
+                                <input type="tel" placeholder="Phone Number" id="PhoneNum" required >
                             </div>
                             <div class="input-container">
-                                <input type="password" placeholder="Password" required>
+                                <input type="password" placeholder="Password" required id="Password">
                             </div>
                             <div class="buttons">
-                                <button class="login-button" onclick="navigateToPage('customer/menu.html')">Sign up</button>
-                                <button class="sign-up-button" onclick="navigateToPage('vendor/vendor.html')">Login</button>
+                                <button class="login-button" id="login-button">Login</button>
+                                <button class="sign-up-button" onclick="navigateToPage('signUp/signup.html')">Sign up</button>
                             </div>
                         </div>
                         <div class="additional-options">
