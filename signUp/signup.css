@@ -16,17 +16,18 @@ body{
     margin: 0;
 }
 .container{
-    background-color: rgba(255, 230, 130, 0.6);
-    border-radius: 10px;
+    background-color: rgba(245, 221, 126, 0.6);
+    border-radius: 25%;
     box-shadow: 0 0 40px rgba(230, 77, 17, 0.6);
     padding: 20px;
-    width: 400px;
-    height: 70vh;
+    width: 50vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     font-family: "Edu AU VIC WA NT Guides", cursive;
+    border: solid 2px black;
 }
 .welcome{
     color: rgb(255, 123, 0);
