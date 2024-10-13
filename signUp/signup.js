@@ -20,16 +20,29 @@
  const database = getDatabase(app);
  const databaseRef = ref(database, 'users');
 
- document.getElementById('login-button').addEventListener('click', (e) => {
+ document.getElementById('sign-up-button').addEventListener('click', (e) => {
      e.preventDefault();
      const phoneNum = document.getElementById('PhoneNum').value;
      const password = document.getElementById('Password').value;
      
      get(ref(database, 'users/'+phoneNum)).then((snapshot) => {
         if (snapshot.exists()) {
-            window.location.href = "customer/menu.html";
+            alert("User Exists");
         } else {
-            alert("User Does Not Exist");
+            set(ref(database, 'users/'+phoneNum),{
+                PhoneNumber:phoneNum,
+                Password:password
+            })
+            .then(() => {
+                alert("User Created   "+ "  Redirecting...");
+                setTimeout(() => {
+                    window.location.href = "../index.html";
+                  }, 200);
+                
+            })
+            .catch((error) => {
+                alert(error.message);
+            });
         }
       }).catch((error) => {
         console.error(error);
