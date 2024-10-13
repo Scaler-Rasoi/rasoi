@@ -7,12 +7,12 @@
 
  // Your web app's Firebase configuration
  const firebaseConfig = {
-   apiKey: "AIzaSyCjxaJLBKQ1Zv1Ry0CyIjpeDIqDe_mi2mw",
-   authDomain: "scaler-canteen.firebaseapp.com",
-   projectId: "scaler-canteen",
-   storageBucket: "scaler-canteen.appspot.com",
-   messagingSenderId: "815465701039",
-   appId: "1:815465701039:web:9eeef734d96e6cadb7be5a"
+  apiKey: "AIzaSyAodkFYZe0HeRqUJq9CYatff5Ixe9MfJas",
+  authDomain: "scaler-canteen-d362b.firebaseapp.com",
+  projectId: "scaler-canteen-d362b",
+  storageBucket: "scaler-canteen-d362b.appspot.com",
+  messagingSenderId: "786619487227",
+  appId: "1:786619487227:web:41b0bb07145e889eda715e"
  };
 
  // Initialize Firebase
