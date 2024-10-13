@@ -23,7 +23,6 @@ This website serves the canteen of Scaler School of Technology, providing a logi
 - HTML
 - CSS
 - JavaScript
+- More comming
 
-## License
 
-This project is licensed under the MIT License.
